@@ -64,5 +64,6 @@ def tours(id_tour):
     depart_from = data.departures[data.tours[id_tour]['departure']]
     return render_template("tour.html", main=data.main_data, tour=data.tours[id_tour], depart_from=depart_from)
 
-
-app.run(debug=True)
+if __name__ == "__main__":
+    # app.run(debug=True)
+    app.run()
